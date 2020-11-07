@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>matrix_print</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>I present to you matrix_print!</h1>
+<h2>1.Introduction</h2>
+<p>
+So your question is: what is it? <br>
+This is a <strong>python</strong> library with a text printing effect to ...
+I Don't know what you might need it for
+¯\_(ツ)_/¯<br>
+You can do a type of quest with a chat or something else... All according to your desire!
+</p>
+<br>
+<h2>2.Commands</h2>
+<p>The first thing we need to import the <strong>matrix_print</strong><br> </p>
+<p class="box"><code>
+1|<strong>import</strong> matrix_print <strong>as</strong> mp
+</code></p>
+<p>Then you can get started!</p>
+<p class="comm"><code>
+1| mp. printc (text, time) #classic printing <br>
+2| mp. printu (text, time, name_of_user) #by the type of message sent from the user<br>
+3| mp.matrix_input(text, time, your_name="") #same input, but with the print effect<br>
+</code></p>
+<p>There is also a special class- <strong class="gradient-1">ColorPrint</strong><br></p>
+<p>If you don't like writing mp. ColorPrint. x, you can just import the class<br></p>
+<p class="box1"><code>
+1|<strong>from</strong> matrix_print <strong>import</strong> ColorPrint <strong>as</strong> col <br>
+</code></p>
+<p>if the library does not detect <strong class="gradient-1">Colorama</strong>, it will output an error <br></p>
+<p class="comm"><code>
+matrix_print.matrix.ColoramaIsNotInstalledError: module colorama is not installed <br>
+</code></p>
+<p>But if you have installed this module, then you are well done! <br></p>
+<p class="comm"><code>
+1|col.red(text, time) # print red text <br>
+2|col.bg_red(text, time) # print text with a red background <br>
+3|col.yellow(text, time) # printing with yellow text <br>
+4|col.bg_yellow(text, time) # print text with a yellow background <br>
+5|col.blue(text, time) # print with blue text <br>
+6|col.bg_blue(text, time) # print text with a blue background <br>
+7|col.green(text, time) # print with green text <br>
+8|col.bg_green(text, time) # print with a blue background <br>
+9|col.bg_white(text, time) # print with a white background <br>
+</code></p>
+<h2>3.Example of using</h2>
+<p class="comm"><code>
+<strong>import</strong> matrix_print <strong>as</strong> mp <br>
+<strong>from</strong> matrix_print <strong>import</strong> ColorPrint <strong>as</strong> col <br>
+<strong>import</strong> random <br>
+<strong>import</strong> time <br>
+<strong>import</strong> sys <br>
+<br>
+mp.printc("hi, welcome to elOS", 0.1) <br>
+mp.printc("elastic Operating System", 0.1) <br>
+mp.printc("downloading files") <br>
+time.sleep(1) <br>
+wat = random.choice(["ERROR", "ok"]) <br>
+if wat == "ERROR": <br>
+&emsp;&emsp;col.red(wat, 0.1) <br>
+&emsp;&emsp;time.sleep(1) <br>
+&emsp;&emsp;sys.exit() <br>
+else: <br>
+&emsp;&emsp;col.green(wat, 0.1) <br>
+</code></p>
+<h2>4.Releases</h2>
+<p>0.1-added colorprint in a separate file <br></p>
+<p>0.2-matrix_input appeared<br></p>
+<p>0.3 - added colorprint backgrounds <br></p>
+<p>0.4-colorprint was moved to the first file and became the <strong class="gradient-1">
+ColorPrint</strong> class<br></p>
+<h2>5.Plans</h2>
+<p>
+now the plans are:
+<ul>
+<li>Creating a paused print
+<li>Ability to delete characters when printing
+</ul>
+</p>
+<a href="https://vk.com/utilerain">
+<img
+src="https://www.flaticon.com/svg/static/icons/svg/889/889151.svg",
+width="60px",
+height="40px">
+</a>
+</body>
+</html>
