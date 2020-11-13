@@ -30,6 +30,7 @@ try:
     col.bg_green("TEST3 PASSED", 0.3)
 except:
     printc("error", 0.3)
+print_edit("test editing", 0.1, "edited      ", 100)
 
 print("test completed")
 sleep(1)

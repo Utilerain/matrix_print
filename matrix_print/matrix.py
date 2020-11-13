@@ -3,7 +3,8 @@ class ColoramaIsNotInstalledError(Exception):
     def __init__(self, text):
         self.txt = text 
 try:
-    
+    from colorama import Fore, Back, Style
+    from colorama import init    
 
 
     def printc(text, time): #classic matrix print
@@ -33,9 +34,24 @@ try:
             print(string, end = "", flush = True)
         print(flush = False)
 
+    def print_edit(text, time, second_text, mnoj=0):
+        my_string = text
+        text = "\b"
+        text2 = second_text
+        for string in my_string:
+            print(string, end="", flush=True)
+            t.sleep(time)
+        for delet in text:
+            print(delet * mnoj, end="", flush=True)
+            t.sleep(time)
+        for text1 in text2:
+            print(text1, end="", flush=True)
+            t.sleep(time)
+        print(flush=False)
+
+
     class ColorPrint:
-        from colorama import Fore, Back, Style
-        from colorama import init
+        
         '''
         colorprint.green(text, time) - text with green color
         colorprint.red(text, time) - text with red color
