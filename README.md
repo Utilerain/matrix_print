@@ -74,6 +74,7 @@
     <p>0.3 - появились задние фоны для colorprint <br></p>
     <p>0.4 - colorprint был перенесен в первый файл и стал классом <strong class="gradient-1">
     ColorPrint</strong> <br></p>
+    <p>0.5 - появился <strong>print_edit</strong>
     <h2>5.Планы</h2>
     <p>
         сейчас в планах идет:
